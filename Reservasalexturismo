@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Reserva - Alex Turismo</title>
+    <style>
+        /* Estilos básicos do formulário */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+            color: #003366; /* Azul da logo */
+        }
+        label {
+            color: #333333;
+            font-weight: bold;
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #FF6600; /* Laranja da logo */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #cc5200;
+        }
+        a {
+            color: #003366; /* Azul da logo */
+            text-decoration: none;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.seusite.com/reserva" method="post">
+        <!-- Logo da Alex Turismo -->
+        <img src="passeios turiscos no ceara.png" alt="Alex Turismo Ceará" class="logo" width="150">
+        
+        <h2>Para reservar é simples.</h2>
+        <p><strong>Preencha os dados abaixo</strong></p>
+
+        <label for="nomes">Nomes:</label>
+        <input type="text" id="nomes" name="nomes" required>
+
+        <label for="quantidade">Quantidade de adultos e crianças:</label>
+        <input type="number" id="adultos" name="adultos" placeholder="Adultos" required>
+        <input type="number" id="criancas" name="criancas" placeholder="Crianças" required>
+
+        <label for="idadeCriancas">Idade das crianças (se houver):</label>
+        <input type="text" id="idadeCriancas" name="idadeCriancas" placeholder="Ex: 5, 8">
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+
+        <label for="contato">Contato:</label>
+        <input type="tel" id="contato1" name="contato1" placeholder="Telefone principal" required>
+        <input type="tel" id="contato2" name="contato2" placeholder="Telefone alternativo">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="embarque">Local de Embarque:</label>
+        <input type="text" id="embarque" name="embarque" required>
+
+        <label for="passeios">Passeios contratados:</label>
+        <textarea id="passeios" name="passeios" rows="3"></textarea>
+
+        <label for="dataReserva">Data ou mês da reserva:</label>
+        <input type="text" id="dataReserva" name="dataReserva" required>
+
+        <label for="total">Total: R$</label>
+        <input type="text" id="total" name="total" placeholder="0,00" required>
+
+        <label for="sinal">Sinal: R$</label>
+        <input type="text" id="sinal" name="sinal" placeholder="0,00" required>
+
+        <label for="restante">Restante: R$</label>
+        <input type="text" id="restante" name="restante" placeholder="0,00" required>
+
+        <p><a href="https://www.seusite.com/termos" target="_blank">Acesse os termos e condições aqui</a></p>
+
+        <button type="submit">Enviar Reserva</button>
+    </form>
+
+    <footer style="text-align: center; margin-top: 20px;">
+        <p><strong>Obrigado pela reserva!</strong></p>
+    </footer>
+</body>
+</html>
